@@ -6,10 +6,10 @@
     "node": ">= 7.6.0"
   },
   "scripts": {
-    "prod": "node ./start.js",
+    "start": "node ./start.js",
     "build": "webpack",
     "watch": "nodemon ./start.js --ignore public/",
-    "start": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
+    "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "assets": "webpack -w",
     "sample": "node ./data/load-sample-data.js",
     "blowitallaway": "node ./data/load-sample-data.js --delete",
